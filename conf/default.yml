@@ -6,10 +6,19 @@ services:
     environment:
       APACHE_RUN_USER: www-data
       APACHE_RUN_GROUP: www-data
+      APACHE_PORT: 8080
     networks:
       - hotel
     ports:
-    - 80/tcp
-
+    - 8080/tcp
+    user: www-data
+    read_only: true
+    tmpfs:
+      - /var/run
+      - /var/lock
+      - /tmp
+    cap_drop:
+      - ALL
+    
 networks:
   hotel:

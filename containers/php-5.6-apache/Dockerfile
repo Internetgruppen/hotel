@@ -10,7 +10,4 @@ RUN a2enmod rewrite && a2dismod -f deflate
 ADD php.ini /usr/local/etc/php/php.ini
 ADD apache2.conf /etc/apache2/apache2.conf
 
-#ADD init.sh /init.sh
-#RUN chmod 500 /init.sh
-
-#ENTRYPOINT ["/init.sh"]
+RUN rm -fr /var/lock && rm -fr /var/run
