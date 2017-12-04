@@ -1,0 +1,7 @@
+version: '2.3'
+services:
+  apache:
+    volumes:
+    - /var/www/html:/var/www/html
+    labels:
+     traefik.frontend.rule: 'PathPrefixStrip:/test-guest'
