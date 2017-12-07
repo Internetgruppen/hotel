@@ -7,7 +7,4 @@ RUN docker-php-ext-install opcache gd pdo_mysql && docker-php-ext-install mysql 
 # Enable/disable apache modules
 RUN a2enmod rewrite && a2dismod -f deflate
 
-ADD php.ini /usr/local/etc/php/php.ini
-ADD apache2.conf /etc/apache2/apache2.conf
-
 RUN rm -fr /var/lock && rm -fr /var/run
