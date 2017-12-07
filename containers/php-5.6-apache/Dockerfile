@@ -2,7 +2,7 @@ FROM php:5.6-apache
 
 # Install basic extensions
 RUN apt-get update && apt-get install -y libpng-dev libpq-dev && apt-get -y purge exim4 && apt-get -y autoremove && apt-get clean
-RUN docker-php-ext-install opcache gd pdo_mysql mysql && pecl install xdebug && echo 'zend_extension=xdebug.so' >/usr/local/etc/php/conf.d/xdebug.ini && apt-get purge gcc -y && rm -fr /usr/lib/gcc/
+RUN docker-php-ext-install opcache gd pdo_mysql mysql && apt-get purge gcc -y && rm -fr /usr/lib/gcc/
 
 # Enable/disable apache modules
 RUN a2enmod rewrite && a2dismod -f deflate
