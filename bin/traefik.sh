@@ -15,7 +15,7 @@ docker run -d \
   -p 443:443 \
   -l traefik.port=8081 \
   -l traefik.frontend.rule=Host:mysa.dds.dk \
-  -v /etc/traefik/traefik.toml:/etc/traefik/traefik.toml \
-  -v /etc/traefik/acme.json:/acme.json \
+  -v ${SCRIPT_DIR}/../conf/traefik.toml:/etc/traefik/traefik.toml \
+  -v ${SCRIPT_DIR}/../acme.json:/acme.json \
   -v /var/run/docker.sock:/var/run/docker.sock \
   traefik:1.4.4-alpine --docker
