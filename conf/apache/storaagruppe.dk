@@ -1,0 +1,10 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/vestjydske/storaa
+  ServerAdmin webmaster@dds.dk
+  ServerName storaagruppe.dk
+  ServerAlias www.storaagruppe.dk
+  <Directory /var/www/hotel/html/vestjydske/storaa>
+    AllowOverride All
+  </Directory>
+</VirtualHost>

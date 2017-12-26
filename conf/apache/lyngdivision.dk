@@ -1,0 +1,9 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/lyng/wordpress
+  ServerAdmin webmaster@dds.dk
+  ServerName lyngdivision.dk
+  ServerAlias www.lyngdivision.dk
+  <Directory "/var/www/hotel/html/lyng/wordpress/">
+  </Directory>
+</VirtualHost>

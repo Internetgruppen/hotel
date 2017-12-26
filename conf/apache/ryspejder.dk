@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/himmelbjerg/ry
+  ServerAdmin webmaster@dds.dk
+  ServerName ryspejder.dk
+  ServerAlias www.ryspejder.dk
+</VirtualHost>

@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/absalon/orion
+  ServerAdmin webmaster@dds.dk
+  ServerName oriongruppe.dk
+  ServerAlias www.oriongruppe.dk
+</VirtualHost>

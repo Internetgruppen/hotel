@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/arr/svaerdkamp
+  ServerAdmin webmaster@dds.dk
+  ServerName svaerdkamp.dk
+  ServerAlias www.svaerdkamp.dk
+</VirtualHost>

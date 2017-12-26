@@ -1,0 +1,9 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/lyng/tjorring
+  ServerAdmin webmaster@dds.dk
+  ServerName tjorringspejderne.dk
+  ServerAlias www.tjorringspejderne.dk
+  <Directory "/var/www/hotel/html/lyng/tjorring/">
+  </Directory>
+</VirtualHost>

@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/dybboel/soenderborg
+  ServerAdmin webmaster@dds.dk
+  ServerName sonderborgspejderne.dk
+  ServerAlias www.sonderborgspejderne.dk
+</VirtualHost>

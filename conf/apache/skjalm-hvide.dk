@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/skjalmhvide
+  ServerAdmin webmaster@dds.dk
+  ServerName skjalm-hvide.dk
+  ServerAlias www.skjalm-hvide.dk
+</VirtualHost>

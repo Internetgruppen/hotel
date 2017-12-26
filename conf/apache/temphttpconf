@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/amager/kastrup
+  ServerAdmin webmaster@dds.dk
+  ServerName xn--kastrupsspejder-dub.dk
+  ServerAlias www.xn--kastrupsspejder-dub.dk
+</VirtualHost>

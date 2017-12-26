@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/arr/jota
+  ServerAdmin webmaster@dds.dk
+  ServerName jota.dk
+  ServerAlias www.jota.dk
+</VirtualHost>

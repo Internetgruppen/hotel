@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/itg/kvl
+  ServerAdmin webmaster@dds.dk
+  ServerName vibe-leonhardt.dk
+  ServerAlias www.vibe-leonhardt.dk
+</VirtualHost>

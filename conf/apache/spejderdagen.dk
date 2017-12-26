@@ -1,0 +1,8 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/spejderdagen
+  ServerAdmin webmaster@dds.dk
+  ServerName spejderdagen.dk
+  ServerAlias www.spejderdagen.dk
+  AddDefaultCharset UTF-8
+</VirtualHost>

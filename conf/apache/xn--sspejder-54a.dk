@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/arr/soespejder
+  ServerAdmin webmaster@dds.dk
+  ServerName xn--sspejder-54a.dk
+  ServerAlias www.xn--sspejder-54a.dk
+</VirtualHost>

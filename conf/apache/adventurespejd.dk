@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/adventurespejd
+  ServerAdmin webmaster@dds.dk
+  ServerName adventurespejd.dk
+  ServerAlias www.adventurespejd.dk
+</VirtualHost>

@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/ege/erikejegod
+  ServerAdmin webmaster@dds.dk
+  ServerName erikejegod.dk
+  ServerAlias www.erikejegod.dk
+</VirtualHost>

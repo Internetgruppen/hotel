@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/itg/buster17
+  ServerAdmin webmaster@dds.dk
+  ServerName sl17.dk
+  ServerAlias www.sl17.dk
+</VirtualHost>

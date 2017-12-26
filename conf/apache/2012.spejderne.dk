@@ -1,0 +1,13 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/arr/sl2012
+  ServerAdmin webmaster@dds.dk
+  ServerName 2012.spejderne.dk
+  ServerAlias www.2012.spejderne.dk
+  ServerAlias sl2012arkiv.dds.dk
+  ServerAlias spejderneslejr2012.dk
+  ServerAlias www.spejderneslejr.dk
+  ServerAlias sl2012.dk
+  ServerAlias www.sl2012.dk
+  ServerAlias mad.sl2012.dk
+</VirtualHost>

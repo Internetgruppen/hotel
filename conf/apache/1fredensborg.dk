@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/oresund/1fredensborg
+  ServerAdmin webmaster@dds.dk
+  ServerName 1fredensborg.dk
+  ServerAlias www.1fredensborg.dk
+</VirtualHost>

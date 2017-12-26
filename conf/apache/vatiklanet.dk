@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/bernstorff/1soeborg/vatiklanet
+  ServerAdmin webmaster@dds.dk
+  ServerName vatiklanet.dk
+  ServerAlias www.vatiklanet.dk
+</VirtualHost>

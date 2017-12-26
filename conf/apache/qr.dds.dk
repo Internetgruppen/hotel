@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/qr
+  ServerAdmin webmaster@dds.dk
+  ServerName qr.dds.dk
+  ServerAlias www.qr.dds.dk
+</VirtualHost>

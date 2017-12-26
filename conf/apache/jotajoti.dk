@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/arr/jotajoti2002
+  ServerAdmin webmaster@dds.dk
+  ServerName jotajoti.dk
+  ServerAlias www.jotajoti.dk
+</VirtualHost>

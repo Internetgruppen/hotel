@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/svendgoenge/klintekongen
+  ServerAdmin webmaster@dds.dk
+  ServerName klintekongen.dk
+  ServerAlias www.klintekongen.dk
+</VirtualHost>

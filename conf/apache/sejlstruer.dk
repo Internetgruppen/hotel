@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/sejlstruer
+  ServerAdmin webmaster@dds.dk
+  ServerName sejlstruer.dk
+  ServerAlias www.sejlstruer.dk
+</VirtualHost>

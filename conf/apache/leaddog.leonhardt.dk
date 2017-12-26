@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/itg/leaddog
+  ServerAdmin webmaster@dds.dk
+  ServerName leaddog.leonhardt.dk
+  ServerAlias www.leaddog.leonhardt.dk
+</VirtualHost>

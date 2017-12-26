@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/skovdam/glamsbjerg
+  ServerAdmin webmaster@dds.dk
+  ServerName glamsbjergspejderne.dk
+  ServerAlias www.glamsbjergspejderne.dk
+</VirtualHost>

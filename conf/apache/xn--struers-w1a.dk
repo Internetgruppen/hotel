@@ -1,0 +1,12 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/vestjydske/struer_soe
+  ServerAdmin webmaster@dds.dk
+  ServerName xn--struers-w1a.dk
+  ServerAlias www.xn--struers-w1a.dk
+
+  <Directory "/var/www/hotel/html/vestjydske/struer_soe/">
+    AllowOverride AuthConfig
+  </Directory>
+</VirtualHost>
+

@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/kursus/plancol
+  ServerAdmin webmaster@dds.dk
+  ServerName sparkcolleruphus.dk
+  ServerAlias www.sparkcolleruphus.dk
+</VirtualHost>

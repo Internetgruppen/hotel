@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/itg/nkj/pilt
+  ServerAdmin webmaster@dds.dk
+  ServerName pilt.dk
+  ServerAlias www.pilt.dk
+</VirtualHost>

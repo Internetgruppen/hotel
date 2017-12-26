@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/bernstorff/1soeborg
+  ServerAdmin webmaster@dds.dk
+  ServerName soeborggruppe.dk
+  ServerAlias www.soeborggruppe.dk
+</VirtualHost>

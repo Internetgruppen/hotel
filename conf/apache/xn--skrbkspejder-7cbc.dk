@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/pamhule/skaerbaek
+  ServerAdmin webmaster@dds.dk
+  ServerName xn--skrbkspejder-7cbc.dk
+  ServerAlias www.xn--skrbkspejder-7cbc.dk
+</VirtualHost>

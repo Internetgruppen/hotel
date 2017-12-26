@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/djursland/hornslet
+  ServerAdmin webmaster@dds.dk
+  ServerName 1hornslettrop.dk
+  ServerAlias www.1hornslettrop.dk
+</VirtualHost>

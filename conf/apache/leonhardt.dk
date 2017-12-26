@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/itg/kl
+  ServerAdmin webmaster@dds.dk
+  ServerName leonhardt.dk
+  ServerAlias www.leonhardt.dk
+</VirtualHost>

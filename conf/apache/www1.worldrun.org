@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/itg/worldrun1
+  ServerAdmin webmaster@dds.dk
+  ServerName www1.worldrun.org
+  ServerAlias www.www1.worldrun.org
+</VirtualHost>

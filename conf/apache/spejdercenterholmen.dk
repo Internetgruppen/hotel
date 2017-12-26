@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/hytter/holmen
+  ServerAdmin webmaster@dds.dk
+  ServerName spejdercenterholmen.dk
+  ServerAlias www.spejdercenterholmen.dk
+</VirtualHost>

@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/odenseaa/hunderup
+  ServerAdmin webmaster@dds.dk
+  ServerName hunderupgruppe.dk
+  ServerAlias www.hunderupgruppe.dk
+</VirtualHost>

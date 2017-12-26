@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/arr/folkemode
+  ServerAdmin webmaster@dds.dk
+  ServerName spejdplan.dk
+  ServerAlias www.spejdplan.dk
+</VirtualHost>

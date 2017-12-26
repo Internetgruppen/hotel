@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/bernstorff/1soeborg/kleptoklan
+  ServerAdmin webmaster@dds.dk
+  ServerName kleptoklan.dk
+  ServerAlias www.kleptoklan.dk
+</VirtualHost>

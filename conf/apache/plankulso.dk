@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/kursus/plankulso
+  ServerAdmin webmaster@dds.dk
+  ServerName plankulso.dk
+  ServerAlias www.plankulso.dk
+</VirtualHost>

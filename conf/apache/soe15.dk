@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/soa/soe15
+  ServerAdmin webmaster@dds.dk
+  ServerName soe15.dk
+  ServerAlias www.soe15.dk
+</VirtualHost>

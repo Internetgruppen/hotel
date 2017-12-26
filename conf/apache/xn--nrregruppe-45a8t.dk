@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/vendelbo/norreaa
+  ServerAdmin webmaster@dds.dk
+  ServerName xn--nrregruppe-45a8t.dk
+  ServerAlias www.xn--nrregruppe-45a8t.dk
+</VirtualHost>

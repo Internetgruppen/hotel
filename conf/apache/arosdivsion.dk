@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/aros
+  ServerAdmin webmaster@dds.dk
+  ServerName arosdivision.dk
+  ServerAlias www.arosdivision.dk
+</VirtualHost>

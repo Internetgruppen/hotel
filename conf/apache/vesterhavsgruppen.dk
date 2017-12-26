@@ -1,0 +1,11 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/dronningdagmar/vesterhavsgruppen
+  ServerAdmin webmaster@dds.dk
+  ServerName vesterhavsgruppen.dk 
+  ServerAlias www.vesterhavsgruppen.dk
+
+<Directory "/var/www/hotel/html/dronningdagmar/vesterhavsgruppen">
+</Directory>
+
+</VirtualHost>

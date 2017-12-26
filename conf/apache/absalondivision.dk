@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/absalon
+  ServerAdmin webmaster@dds.dk
+  ServerName absalondivision.dk
+  ServerAlias www.absalondivision.dk
+</VirtualHost>

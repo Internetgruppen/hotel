@@ -1,0 +1,51 @@
+<IfModule mod_fastcgi.c>
+ 
+    AddHandler php7-fcgi-itg.php
+    Action php7-fcgi-itg/php7-fcgi-username
+    Alias /php7-fcgi-itg/usr/lib/cgi-bin/php7-fcgi-itg
+    FastCgiExternalServer /usr/lib/cgi-bin/php7-fcgi-itg -socket /run/php/php7.0-fpm.username.sock -pass-header Authorization
+ 
+    <Directory "/usr/lib/cgi-bin">
+    Require all granted
+    </Directory>
+</IfModule>
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/itg
+  ServerAdmin webmaster@dds.dk
+  ServerName internetgruppen.dk
+  ServerAlias www.internetgruppen.dk
+  <Directory /var/www/hotel/html/itg/w/>
+   AllowOverride All
+  </Directory>
+
+  <IfModule mod_fastcgi.c>
+    <FilesMatch ".+\.ph(p[345]?|t|tml)$">
+        SetHandler php7-fcgi-username
+    </FilesMatch>
+  </IfModule>
+
+  Alias /wiki /var/www/hotel/html/itg/w/index.php
+  Alias /index.php /var/www/hotel/html/itg/w/index.php
+
+    ProxyRequests Off
+    <Proxy *>
+        Order deny,allow
+        Allow from all
+    </Proxy>
+    ProxyPass        /nagios    http://grisen.dds.dk/nagios3
+    ProxyPassReverse /nagios    http://grisen.dds.dk/nagios3
+    ProxyPass        /nagios3   http://grisen.dds.dk/nagios3
+    ProxyPassReverse /nagios3   http://grisen.dds.dk/nagios3
+
+    ProxyPass        /mrtg/     http://grisen.dds.dk/mrtg/
+    ProxyPassReverse /mrtg/     http://grisen.dds.dk/mrtg/
+    ProxyPass        /ntop/     http://proxy.dds.dk:3000/
+    ProxyPassReverse /ntop/     http://proxy.dds.dk:3000/
+
+    ProxyPass        /cacti     http://grisen.dds.dk/cacti
+    ProxyPassReverse /cacti     http://grisen.dds.dk/cacti
+
+    ProxyPass        /opennms   http://grisen.dds.dk:18980/opennms
+    ProxyPassReverse /opennms   http://grisen.dds.dk:18980/opennms
+</VirtualHost>

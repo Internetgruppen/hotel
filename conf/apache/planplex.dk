@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/kursus/planplex
+  ServerAdmin webmaster@dds.dk
+  ServerName planplex.dk
+  ServerAlias www.planplex.dk
+</VirtualHost>

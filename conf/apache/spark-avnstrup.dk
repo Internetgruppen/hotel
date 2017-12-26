@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/kursus/nys
+  ServerAdmin webmaster@dds.dk
+  ServerName spark-avnstrup.dk
+  ServerAlias www.spark-avnstrup.dk
+</VirtualHost>

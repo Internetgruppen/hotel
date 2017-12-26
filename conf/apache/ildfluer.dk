@@ -1,0 +1,12 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/naturudvalg/ildfluer
+  ServerAdmin webmaster@dds.dk
+  ServerName ildfluer.dk
+  ServerAlias www.ildfluer.dk
+  <Directory /var/www/hotel/html/naturudvalg/ildfluer>
+    Options All
+    AllowOverride ALL
+    RewriteEngine on
+  </Directory>
+</VirtualHost>

@@ -1,0 +1,9 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/spejdermuseet
+  ServerAdmin webmaster@dds.dk
+  ServerName web.spejdermuseet.dk
+  ServerAlias www.web.spejdermuseet.dk
+  ServerAlias www.spejdermuseet.dk
+  ServerAlias spejdermuseet.dk
+</VirtualHost>

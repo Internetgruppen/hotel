@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/horse/hovedgaardspejderne
+  ServerAdmin webmaster@dds.dk
+  ServerName hovedgaardspejderne.dk
+  ServerAlias www.hovedgaardspejderne.dk
+</VirtualHost>

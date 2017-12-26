@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/lyng/trehoeje
+  ServerAdmin webmaster@dds.dk
+  ServerName vildbjergspejderne.dk
+  ServerAlias www.vildbjergspejderne.dk
+</VirtualHost>

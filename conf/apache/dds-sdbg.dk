@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/dybboel/soenderborg
+  ServerAdmin webmaster@dds.dk
+  ServerName dds-sdbg.dk
+  ServerAlias www.dds-sdbg.dk
+</VirtualHost>

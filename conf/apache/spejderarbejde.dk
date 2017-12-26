@@ -1,0 +1,14 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/spejderarbejde
+  ServerAdmin webmaster@dds.dk
+  ServerName spejderarbejde.dk
+  ServerAlias www.spejderarbejde.dk
+   <Directory "/var/www/hotel/html/spejderarbejde">
+     Options Indexes
+     IndexOptions FancyIndexing +FoldersFirst +DescriptionWidth=*
+     IndexOrderDefault Ascending Name
+     AllowOverride All
+   </Directory>
+</VirtualHost>
+

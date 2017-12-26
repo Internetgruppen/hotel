@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/itg/jonas
+  ServerAdmin webmaster@dds.dk
+  ServerName afotografen.dk
+  ServerAlias www.afotografen.dk
+</VirtualHost>

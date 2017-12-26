@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/phpmyadmin
+  ServerAdmin webmaster@dds.dk
+  ServerName phpmyadmin.dds.dk
+  ServerAlias www.phpmyadmin.dds.dk
+</VirtualHost>

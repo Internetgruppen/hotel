@@ -1,0 +1,9 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/bernstorff/havmaendene/
+  ServerAdmin bystrup@internetgruppen.dk
+  ServerName xn--havmndene-j3a.dk
+  ServerAlias www.xn--havmndene-j3a.dk
+  #ServerAlias havmændene.dk
+  #ServerAlias www.havmændene.dk
+</VirtualHost>

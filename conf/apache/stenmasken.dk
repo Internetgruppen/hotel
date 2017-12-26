@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/aros
+  ServerAdmin webmaster@dds.dk
+  ServerName stenmasken.dk
+  ServerAlias www.stenmasken.dk
+</VirtualHost>

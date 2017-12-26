@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/amager/robinhoodgruppe
+  ServerAdmin webmaster@dds.dk
+  ServerName robinhoodgruppe.dk
+  ServerAlias www.robinhoodgruppe.dk
+</VirtualHost>

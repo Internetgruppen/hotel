@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/antvorskov/laurentius
+  ServerAdmin webmaster@dds.dk
+  ServerName stenlillespejderne.dk
+  ServerAlias www.stenlillespejderne.dk
+</VirtualHost>

@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/kursus/puf
+  ServerAdmin webmaster@dds.dk
+  ServerName puf.spejder.dk
+  ServerAlias www.puf.spejder.dk
+</VirtualHost>

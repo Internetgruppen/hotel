@@ -1,0 +1,7 @@
+
+<VirtualHost *>
+  DocumentRoot /var/www/hotel/html/jensbang
+  ServerAdmin webmaster@dds.dk
+  ServerName jensbang.dk
+  ServerAlias www.jensbang.dk
+</VirtualHost>
