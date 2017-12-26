@@ -1,0 +1,8 @@
+version: '2.3'
+services:
+  apache:
+    volumes:
+    - /var/hotel/home/itg/kvl/webroot:/var/www/html:rw
+    - /var/run/mysqld/mysqld.sock:/mysql.sock:rw
+    labels:
+     traefik.frontend.rule: 'Host:vibe-leonhardt.dk,www.vibe-leonhardt.dk'
