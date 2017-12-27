@@ -9,11 +9,12 @@ if [[ $(id -u) -gt 0 ]]; then
 fi
 
 COMMAND=$1
+shift
 
 if [[ $COMMAND == "up" ]]; then
 	COMMAND="up -d --build"
 fi
 
 for S in $(ls -1 ${SCRIPT_DIR}/../conf/sites-enabled/*.yml); do
-	./compose.sh "${S}" ${COMMAND}
+	./compose.sh "${S}" ${COMMAND} $@
 done
