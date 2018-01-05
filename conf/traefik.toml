@@ -131,4 +131,4 @@ email = "jot@internetgruppen.dk"
 storage = "acme.json"
 entryPoint = "https"
 onHostRule = true
-onDemand = false
+onDemand = true
