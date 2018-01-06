@@ -1,0 +1,6 @@
+# Copy this file to tenant.my.cnf and fill out the lines below.
+[client]
+host     = <host>
+user     = <username>
+password = <password>
+database = <database>

@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  ftp:
+    build: ./ftp
+    volumes:
+      - '../../:/opt/hotel'
+      - '../../conf/proftpd/proftpd.conf:/etc/proftpd/proftpd.conf'
+      - './sqlconnectionfo.conf:/etc/proftpd/sqlconnectinfo.conf'
+      - './proftpd-debug.conf:/etc/proftpd/conf.d/proftpd-debug.conf'
+    entrypoint: "/usr/sbin/proftpd -n"
+
+  db:
+    image: mariadb:latest
+    volumes:
+      - './structure.sql:/docker-entrypoint-initdb.d/structure.sql'
+      - './debug.my.cnf:/etc/mysql/conf.d/debug.my.cnf'
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: hotel_proftpd
+      MYSQL_USER: tenant_user
+      MYSQL_PASSWORD: tenant_password
