@@ -1,0 +1,2 @@
+# Copy this file to sqlconnectionfo.conf and replace the placeholdes below.
+SQLConnectInfo <db-name>@<db-host> <db-user> <db-password>

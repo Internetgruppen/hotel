@@ -1,0 +1,5 @@
+# Switch on general statement log for easier debugging. You still have to tail
+# it to actually see the log-statements.
+[mysqld]
+general_log = on
+general_log_file = /var/log/mysql/mysql.log
