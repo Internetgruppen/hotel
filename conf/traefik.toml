@@ -132,3 +132,7 @@ storage = "acme.json"
 entryPoint = "https"
 onHostRule = true
 onDemand = true
+
+[acme.httpChallenge]
+entryPoint = "http"
+

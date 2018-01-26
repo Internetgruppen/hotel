@@ -19,4 +19,4 @@ docker run -d \
   -v ${SCRIPT_DIR}/../conf/traefik.toml:/etc/traefik/traefik.toml \
   -v ${SCRIPT_DIR}/../acme.json:/acme.json \
   -v /var/run/docker.sock:/var/run/docker.sock \
-  traefik:1.4-alpine --docker
+  traefik:1.5-alpine --docker
