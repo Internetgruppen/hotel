@@ -7,13 +7,14 @@ Traefik lytter på port 80 og 443 og sender videre til individuelle apache insta
 
 ## MySQL
 
-Bruges som DB til at indeholde opsætning af brugere til proFTPd. Desuden kan hvert værelse i hotellet have sin egen DB. Brugernavn og PW står i en MySQL tabel (NKJ?)
+Bruges som DB til at indeholde opsætning af brugere til proFTPd. Desuden kan hvert værelse i hotellet have sin egen DB. Brugernavn og PW står i en MySQL tabel (NKJ?).
 
 ## FTP
 Brugere kan up- og downloade filer via FTP. proFTPd skriver med samme uid og gid uanset bruger. Hver bruger bliver chroot'ed til et bibliotek i træet.
 
 ## Apache
-kører i form af Docker images. Dvs. alle apache instanser er ens, kører med samme uid og gid og er chroot'ed til hver sit bibliotek i træet. Apache opdateringer sker ved at bygge et nyt Docker image.
+kører i form af Docker images. Apache starter op som root i containeren. Den tager port 80 og smider sine rettigheder. Apache kører chroot'ed til sit eget bibliotek. Herefter kører alle worker-threads med samme uid og gid.
+Apache kontakter MySQL på en måde, der gør det umuligt for een apache instans at få adgang til andre databaser: Apache-root har ikke socket adgang, men bruger et user-id og password, der står i en fil som kun Unix-root kan læse. Den fil læser Debian ved nedlukning af Apache f.eks. ved opdateringer.
 
 ## Docker
 konfigurationen ligger i /opt/hotel/cong/apache2.conf
