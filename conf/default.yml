@@ -1,7 +1,7 @@
 version: '2.3'
 services:
   apache:
-    image: internetgruppen/hotel:php-5.6-apache
+    image: internetgruppen/hotel:latest
     mem_limit: 256m
     environment:
       APACHE_RUN_USER: www-data
