@@ -34,17 +34,24 @@ Det betyder at følgende sker:
 # Opstart
 
 ## Opstart af eet hotelværelse
-Startede pilt.dk med kommandoen:
+Start pilt.dk med kommandoen:
 
 `root@mysa:/opt/hotel/bin# ./compose.sh ../conf/sites-enabled/pilt.dk.yml up -d`
+
+Hotellets run-status er nu administreret af systemd, så en bedre måde at starte et værelse på er:
+
+`# systemctl start hotel-pilt.dk`
+
 
 ## Opstart af hele hotellet
 Man kan starte alle sites på hotellet med:
 
-`root@mysa:/opt/hotel/bin# ./hotel.sh up`
+`# systemctl start hotel.target`
+
+## Se logs for et enkelt hotelværelse
+
+`# journalctl -u hotel-pilt.dk`
 
 # Dashboard
 https://mysa.dds.dk/dashboard/#/
 (NKJ?)
-
-> Written with [StackEdit](https://stackedit.io/).

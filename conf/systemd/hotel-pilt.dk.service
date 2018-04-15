@@ -1,0 +1,10 @@
+[Unit]
+StopWhenUnneeded=yes
+
+[Service]
+Type=simple
+ExecStart=/opt/hotel/bin/compose.sh /opt/hotel/conf/sites-enabled/pilt.dk.yml up
+ExecStop=/opt/hotel/bin/compose.sh /opt/hotel/conf/sites-enabled/pilt.dk.yml down
+
+[Install]
+WantedBy=hotel.target

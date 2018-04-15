@@ -1,0 +1,7 @@
+[Unit]
+Description=DDS ITG Webhotel
+Requires=network.target docker.service
+After=network.target docker.service
+
+[Install]
+WantedBy=multi-user.target
