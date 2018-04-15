@@ -24,8 +24,9 @@ services:
       - NET_RAW
     extra_hosts:
      - "db:62.243.225.163"
+    networks:
+     - hotel
     
 networks:
-  default:
-    external:
-      name: hotel
+  hotel:
+    external: true
