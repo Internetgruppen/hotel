@@ -5,6 +5,7 @@ StopWhenUnneeded=yes
 Type=simple
 ExecStart=/opt/hotel/bin/compose.sh /opt/hotel/conf/sites-enabled/pilt.dk.yml up
 ExecStop=/opt/hotel/bin/compose.sh /opt/hotel/conf/sites-enabled/pilt.dk.yml down
+Restart=on-failure
 
 [Install]
 WantedBy=hotel.target
