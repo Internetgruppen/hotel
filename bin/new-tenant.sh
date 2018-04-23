@@ -17,6 +17,9 @@ SHARED_UID=65534
 # GID to use for ftp-users (nogroup)
 SHARED_GID=65534
 
+# Hotel Network CIDR in mysql wildcard format % = match all
+HOTEL_NETWORK="172.19.%"
+
 # TODO:
 # - Trap errors?
 # - Create apache/docker configuration?
@@ -61,7 +64,7 @@ fi;
 
 # Create mysql database
 $MYSQL_CMD -e "CREATE DATABASE ${T_DB_NAME}"
-$MYSQL_CMD -e "GRANT ALL PRIVILEGES ON ${T_DB_NAME}.* to ${T_USERNAME} identified by '${T_DB_PASSWORD}'"
+$MYSQL_CMD -e "GRANT ALL PRIVILEGES ON ${T_DB_NAME}.* to '${T_USERNAME}'@'${HOTEL_NETWORK}' identified by '${T_DB_PASSWORD}'"
 
 # Create ftp user
 $MYSQL_CMD ${MYSQL_PROFTPD_DB} -e "INSERT INTO users (userid, passwd, uid, gid, homedir) VALUES ('${T_USERNAME}', '${T_PASSWORD_CRYPT}', ${SHARED_UID}, ${SHARED_GID}, '${T_HOMEDIR}')"
