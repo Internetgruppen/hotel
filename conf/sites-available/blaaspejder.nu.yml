@@ -1,8 +1,8 @@
-version: '2.4'
+version: '2.3'
 services:
   apache:
     volumes:
     - /var/hotel/home/blaaspejder.nu:/var/www/html:rw
     - /var/run/mysqld/mysqld.sock:/mysql.sock:rw
     labels:
-     traefik.frontend.rule: 'Host:blaaspejder.nu,www.blaaspejder.nu'
+     traefik.frontend.rule: 'Host:blaaspejder.nu,www.blaaspejder.nu,xn--blspejder-62a.nu,www.xn--blspejder-62a.nu'
