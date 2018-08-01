@@ -5,4 +5,4 @@ services:
     - /var/hotel/home/arr/jotajoti2002/webroot:/var/www/html:rw
     - /var/run/mysqld/mysqld.sock:/mysql.sock:rw
     labels:
-     traefik.frontend.rule: 'Host:jotajoti.dk,www.jotajoti.dk'
+     traefik.frontend.rule: 'Host:jotajoti.dk,www.jotajoti.dk,jota.dk,www.jota.dk,jotijota.dk,www.jotijota.dk'
