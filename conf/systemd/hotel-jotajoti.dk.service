@@ -1,0 +1,11 @@
+[Unit]
+StopWhenUnneeded=yes
+
+[Service]
+Type=simple
+ExecStart=/opt/hotel/bin/compose.sh /opt/hotel/conf/sites-enabled/jotajoti.dk.yml up
+ExecStop=/opt/hotel/bin/compose.sh /opt/hotel/conf/sites-enabled/jotajoti.dk.yml down
+Restart=on-failure
+
+[Install]
+WantedBy=hotel.target
