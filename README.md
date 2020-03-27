@@ -27,7 +27,8 @@ Eksempel: Start pilt.dk med kommandoen:
 Første parameter er en .yml fil, så en kommando og til sidst "resten" af options, her "-d" som betyder (NKJ?)
 I praksis er .yml filen et softlink til filen med samme navn i /sites-available. Linket laves sådan:
 
-sudo ln -s sites-available/xxx.yml sites-enabled/xxx.yml
+cd /opt/hotel/conf
+sudo ls -s sites-available/pilt.dk.yml sites-enabled/
 
 Det ender med 
 `docker-compose -f /opt/hotel/conf/default.yml -f /opt/hotel/conf/sites-enabled/pilt.dk.yml -p /opt/hotel/conf/sites-enabled/pilt.dk up -d`
